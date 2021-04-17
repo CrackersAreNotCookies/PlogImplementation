@@ -1,9 +1,16 @@
+#include "getInteger.h"
 #include <iostream>
-
-using namespace std;
+#include <plog/Log.h>
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    plog::init(plog::debug, "Logfile.txt");
+    LOGD << "main() called";
+
+    int x{ getInteger() };
+    int y{ getInteger() };
+
+    std::cout << x << " + " << y << " is " << x + y << '\n';
+
     return 0;
 }
