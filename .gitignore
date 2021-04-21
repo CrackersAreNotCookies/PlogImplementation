@@ -1,4 +1,5 @@
 # Code::Blocks files
+*.cbp
 *.layout
 *.depend
 bin/
@@ -36,3 +37,6 @@ obj/
 *.exe
 *.out
 *.app
+
+# Others
+*.txt
